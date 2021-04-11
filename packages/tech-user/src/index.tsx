@@ -9,7 +9,7 @@ export interface HelloProps { name: string; }
 class Hello extends React.Component<HelloProps, {}> {
     render() {
         return (   <>
-        <h1>Hello from {this.props.name}!</h1>;
+        <h1>Hello from local {this.props.name}!</h1>;
         <ComponentLibrary />
         </>)
     }
