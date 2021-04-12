@@ -1,0 +1,8 @@
+@import '~antd/dist/antd.css';
+$font-stack:    Helvetica, sans-serif;
+$primary-color: rgb(189, 3, 3);
+
+body {
+  font: 100% $font-stack;
+  background-color: $primary-color;
+}

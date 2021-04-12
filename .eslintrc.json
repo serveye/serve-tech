@@ -1,5 +1,6 @@
 {
     "env": {
+        "browser": true,
         "es2021": true,
         "node": true
     },
@@ -23,7 +24,7 @@
     "rules": {
         "indent": [
             "error",
-            2
+            4
         ],
         "linebreak-style": [
             "error",
