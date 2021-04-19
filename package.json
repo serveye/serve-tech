@@ -10,6 +10,17 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "css-loader": "^5.2.1",
+    "eslint": "^7.24.0",
+    "eslint-plugin-react": "^7.23.2",
+    "lerna": "^4.0.0",
+    "style-loader": "^2.0.0"
+  },
+  "dependencies": {
+    "antd": "^4.15.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1"
   }
 }

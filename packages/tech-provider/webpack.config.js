@@ -1,40 +1,41 @@
-const path = require("path");
-const HWP = require("html-webpack-plugin");
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require('path');
+const HWP = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "production",
+    mode: 'production',
 
-  // Enable sourcemaps for debugging webpack's output.
-  devtool: "source-map",
+    // Enable sourcemaps for debugging webpack's output.
+    devtool: 'source-map',
 
-  resolve: {
-    extensions: [".ts", ".tsx", ".js"],
-  },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js'],
+    },
 
-  module: {
-    rules: [
-      {
-        test: /\.ts(x?)$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "ts-loader",
-          },
+    module: {
+        rules: [
+            {
+                test: /\.ts(x?)$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'ts-loader',
+                    },
+                ],
+            },
+            // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+            {
+                enforce: 'pre',
+                test: /\.js$/,
+                loader: 'source-map-loader',
+            },
         ],
-      },
-      // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-      {
-        enforce: "pre",
-        test: /\.js$/,
-        loader: "source-map-loader",
-      },
+    },
+    plugins: [
+        new HWP({
+            template: path.resolve(__dirname, 'index.html'),
+            filename: 'index.html',
+            inject: 'body',
+        }),
     ],
-  },
-  plugins: [
-    new HWP({
-      template: path.resolve(__dirname, "index.html"),
-      filename: "index.html",
-      inject: "body",
-    }),
-  ],
 };
