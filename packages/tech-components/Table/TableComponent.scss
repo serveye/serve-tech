@@ -1,0 +1,18 @@
+@import "antd/dist/antd.css";
+$font-stack: Helvetica, sans-serif;
+$primary-color: rgb(2, 174, 25);
+
+.table-component {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  thead[class*="ant-table-thead"] th {
+    background-color: rgb(132, 169, 45);
+    border: 1px solid rgb(15, 16, 15);
+  }
+  td[class*="ant-table-cell"] {
+    border: 1px solid rgb(132, 169, 45);
+  }
+}

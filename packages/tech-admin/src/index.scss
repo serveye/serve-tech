@@ -1,8 +1,8 @@
-@import '~antd/dist/antd.css';
+@import 'antd/dist/antd.css';
 $font-stack:    Helvetica, sans-serif;
-$primary-color: rgb(189, 3, 3);
+$primary-color: rgb(58, 61, 59);
 
-body {
+.h1-sm {
   font: 100% $font-stack;
   background-color: $primary-color;
 }
