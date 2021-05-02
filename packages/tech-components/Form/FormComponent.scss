@@ -1,0 +1,21 @@
+@import "antd/dist/antd.css";
+$font-stack: Helvetica, sans-serif;
+.form {
+    text-align: center;
+}
+.card-container {
+display:inline-block;
+    background-color: rgb(132, 169, 45);
+    border-radius: 5px;
+    height: auto;
+    width: 50%;
+   
+}
+.form-container{
+ 
+ padding-left: 25%;
+ padding-top: 10%;
+    width : 100%;
+  
+    
+}
