@@ -1,9 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import ComponentLibrary from 'tech-components';
-import { TableComponent } from 'tech-components/Table/index';
-import {FormComponent} from 'tech-components/Form/index';
+// import { TableComponent } from 'tech-components/Table';
+// import {FormComponent} from 'tech-components/Form';
+//import {LoaderComponent} from 'tech-components/Loader';
+import {MessageComponent} from 'tech-components/Message';
 import './index.scss';
 export interface HelloProps { name: string; }
 
@@ -11,9 +12,8 @@ export interface HelloProps { name: string; }
 class Hello extends React.Component<HelloProps, string> {
     render() {
         return (<div>
-            <h1 className='h1-sm'>Hello from {this.props.name}!</h1>;
-            <ComponentLibrary />
-            <FormComponent/>
+          
+            <MessageComponent message='hishshs' type='warning'/>
         </div>);
     }
 }
