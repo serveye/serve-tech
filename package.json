@@ -9,6 +9,12 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "admin": "cd packages/tech-admin && yarn start",
+    "provider": "cd packages/tech-provider && yarn start",
+    "user":"cd packages/tech-user && yarn start"
+
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
